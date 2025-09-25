@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak-Saran - Kantor Camat Padangsidimpuan Utara</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-flex">
+    <!-- Kiri -->
+    <div class="left-side">
+      <img src="img/logo.png" alt="Logo" class="logo">
+      <div class="welcome-texts">
+        <span class="welcome-main">Kantor Camat Padangsidimpuan Utara</span>
+        <span class="welcome-sub">Portal Resmi Kantor Camat Padangsidimpuan Utara</span>
+      </div>
+    </div>
+
+     <!-- Hamburger -->
+            <div id="hamburger" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+    <!-- Kanan -->
+    <nav id="navMenu">
+      <a href="index.html"><i class="fas fa-home"></i> Beranda</a>
+     <!-- Dropdown Profil -->
+        <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fas fa-user"></i> Profil <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="profil-kecamatan.html">Profil Kecamatan</a>
+            <a href="struktur-organisasi.html">Struktur Organisasi</a>
+            <a href="visi-misi.html">Visi Misi & Maklumat Pelayanan</a>
+            <a href="profil-camat.html">Profil Camat</a>
+          </div>
+        </div>
+      <a href="layanan.html"><i class="fas fa-concierge-bell"></i> Layanan</a>
+      <a href="lokasi.html"><i class="fas fa-map-marker-alt"></i> Lokasi</a>
+      <a href="Kontak-Saran.html"><i class="fas fa-envelope"></i> Kontak & Saran</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Overlay untuk efek klik -->
+<div id="overlay"></div>
+
+<main class="container">
+  <h2>Hubungi Kami dan Berikan Saran Anda</h2>
+  <p>Jika Anda memiliki pertanyaan, saran, atau ingin menghubungi kami, silakan gunakan informasi kontak di bawah ini:</p>
+  <h3>Informasi Kontak</h3>
+  <p>Alamat: 97HC+89Q, Wek II, Kec. Padangsidimpuan Utara, Kota Padang Sidempuan, Sumatera Utara 22711</p>
+  <p>☎️Telepon: 0811 653 1119</p>
+  <p>💌Email: kantorcamatpsputara01@gmail.com</p>
+  <p>📍Instagram: @kantorcamatpsputara</p>
+
+
+  
+
+</main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            &copy; 2025 Kantor Camat Padangsidimpuan Utara. Mahasiswa PKP UMTS
+          </div>
+          <div class="footer-right">
+            <a href="https://www.facebook.com/share/15uTmovxTt/" target="blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/kantorcamatpsputara?igsh=ZTB3Z2NxeWhpMzE4" target="blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </footer>
+
+<!-- Script Hamburger -->
+ <!-- Script Hamburger -->
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const navMenu = document.getElementById("navMenu");
+        const overlay = document.getElementById("overlay");
+
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            overlay.classList.toggle("active");
+        });
+
+        overlay.addEventListener("click", () => {
+            navMenu.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+    </script>
+</body>
+</html>
